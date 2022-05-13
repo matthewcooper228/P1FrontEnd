@@ -1,0 +1,8 @@
+<button *ngIf="displayFirstButton" (click)="displayFirstButton = false; displayChooseAStore = true;">see store locations</button>
+<div *ngIf="displayChooseAStore">
+    <strong>Here are the store locations:</strong>
+    <div *ngFor="let store of allStores">
+        {{store.address}}
+    </div>
+    <button (click)="displayChooseAStore = false; displayFirstButton = true;">back</button>
+</div>
