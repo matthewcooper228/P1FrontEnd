@@ -11,7 +11,7 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   getAllStores() : Observable<any> {
-    return this.http.get('https://localhost:7255/api/Stores');
+    return this.http.get('https://matthewstore.azurewebsites.net/api/Stores');
   }
 }
 
